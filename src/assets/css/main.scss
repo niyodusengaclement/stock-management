@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;  
+  width: 100%;
+}
+
+ul {
+  list-style-type: none; /* specify type of list, none remove dots or nbrs of list */
+  margin: 0;
+  padding: 0;
+}
+.active {
+  background: rgb(46, 59, 59);
+  width: auto;
+}
+
+.container {
+  text-align: center;
+  padding: .8em 1.2em;    /* work inside element n should accept 4 values work clockwise */
+}
+.logo {
+  margin-top: 8px;
+  margin-left: 10px;
+}
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+header {
+  background-color: rgb(30, 32, 32);
+  height: 3em;
+  display: flex; /*put all data contains in single element side by side*/
+  justify-content: space-between; /* put space btn two elements */
+}
+nav ul {
+  position: fixed; /* if u scroll it keeps fixed */
+  right: 0;
+  top: 0;
+  width: 50%;
+  text-align: left;
+  background: rgb(30, 32, 32);
+  height: 100%;
+  z-index: 7;
+  padding-top: 3em;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 1em 2em;
+  background-color: rgb(26, 36, 36);
+}
+nav ul li a:hover {
+  background-color: rgb(46, 59, 59);
+}
+.formShape {
+  display: block;
+  padding: 0 3em;
+  word-wrap: break-word;
+}
+.formSideInfo {
+  display: none;
+}
+.socialLogin {
+  margin-top: 60px;
+}
+.socialLogin span {
+  margin-left: 50%;
+  text-align: center;
+}
+.socialLogin button {
+  margin-top: 20px;
+  width: 100%;
+}
+.socialLogin button a {
+  font-size: 11px;
+  color: white;
+  text-decoration: none;
+}
+.smallIbtn {
+  margin-left: 20px;
+  float: left;
+}
+.google{
+  background: rgb(146, 7, 7);
+}
+.facebook {
+  background: rgb(2, 14, 71);
+}
+.login {
+  margin-left: 20%;
+}
+.deleteBtn {
+  color: rgba(248, 50, 0, 0.74);
+}
+.bigTable {
+  width: 100px;
+}
+.menuLink {
+  display: block;
+  margin: 0 auto 13% auto;
+}
+.sideImg img {
+  display: none;
+}
+form {
+  margin-top: 15px;
+  text-align: left;
+  box-shadow: 0 4px 10px;
+  padding: 1em 2em 3em 2em;
+  width: 50%;
+  height: 370px;
+}
+form label {
+  margin-bottom: 1em;
+  width: 40%;
+} 
+form input {
+  width: 100%;
+  height: 1.5em;
+  margin-bottom: 1em;
+}
+form button {
+  background-color: rgb(1, 16, 20);
+  color: white;
+  height: 3em;
+  width: 100%;
+  float: right;
+  border-radius: 9px;
+  box-shadow: 0px 5px 9px rgb(40, 42, 43);
+}
+form h5 {
+  color: red;
+  text-align: center;
+}
+form span a {
+  font-size: small;
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+  margin: 0 2em;
+  
+}
+.shortInfo a {
+  color: black;
+  font-size: small;
+}
+@media only screen and (min-width: 600px) {
+  h1{
+    font-size: 3em;
+    margin: 0;
+  }
+  .socialLogin button a {
+    font-size: 16px;
+  }
+  .formShape {
+    display: flex;
+    justify-content: space-between;
+    padding: 0em;
+  }
+  .sideImg {
+    display: block;
+  }
+  .sideImg img {
+    display: inline-block;
+    position: relative;
+    margin-left: 337px;
+    margin-top: -620px;
+    height: 435px;
+    margin-bottom: 14px;
+    box-shadow: 0 5px 6px;
+  }  
+  .formSideInfo {
+    display: block;
+  }
+  form {
+    margin-top: 15px;
+    width: 240px;
+    margin-left: 2em;
+  }
+  .displayAsTable ul {
+    position: inherit;
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-top: 0;
+  }
+  .displayAsTable ul li{
+    text-align: left;
+    padding: 0 2em;
+    width: 90px;
+    float: left;    
+    margin-top: 2em;
+  }
+  .liHeader {
+    font-weight: bold;
+    color: green;
+  }
+  ul li span {
+    cursor: pointer;
+  }
+  nav ul {
+    position: inherit;
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-top: 0;
+  }
+  nav ul li {
+    float: left;    
+    margin-top: -3em;
+  }
+  
+  nav ul li a{
+    background: none;
+  }
+  nav ul li a:hover {
+    background-color: rgb(46, 59, 59);
+    width: auto;
+  }
+  .bigTable {
+    width: 1000px;
+    table-layout: inherit;
+  }
+}

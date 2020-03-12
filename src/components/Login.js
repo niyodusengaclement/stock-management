@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../assets/css/main.scss';
 import sideImg from '../assets/images/sideImg.png';
 import { connect } from 'react-redux';
@@ -45,7 +45,7 @@ class Login extends Component {
           <div className="formShape">
             <div className="login">
             <form action="" onSubmit={this.formHandler}> 
-            <h5>{this.props.user.error}</h5> 
+            {/* <h5>{this.props.user.error}</h5>  */}
             <h2 id="unused">Login</h2>
               <label htmlFor="email">Email</label>
               <input type="email" required onChange={this.handleInputChanges} value={this.state.email} name="email" id="email"/>
@@ -78,4 +78,4 @@ const mapDispatchToProps = (dispatch) => {
     loginFail: (error) => { dispatch (loginFail(error)) }
   }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+export default Login;

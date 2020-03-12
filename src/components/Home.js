@@ -15,10 +15,13 @@ class Home extends Component {
     }
   }
   
-  handleInputChanges = (evt) => {
+  handleInputChanges = (evt) => {    
+    const { name, value } = evt.target
     this.setState({
-      [evt.target.name]: evt.target.value
+      [name]: value
     })
+    console.log(this.state);
+    
   }
   formHandler = (evt) => {
     this.setState({
